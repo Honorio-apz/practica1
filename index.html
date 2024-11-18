@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMBig 2024 - International Conference</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+        }
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .speaker-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 4px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold">SIMBig 2024</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-blue-300">About</a>
+                    <a href="#speakers" class="hover:text-blue-300">Speakers</a>
+                    <a href="#location" class="hover:text-blue-300">Location</a>
+                    <a href="#registration" class="hover:text-blue-300">Registration</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed w-full bg-gray-800 text-white z-40 mt-16">
+        <div class="container mx-auto px-4 py-2">
+            <a href="#about" class="block py-2">About</a>
+            <a href="#speakers" class="block py-2">Speakers</a>
+            <a href="#location" class="block py-2">Location</a>
+            <a href="#registration" class="block py-2">Registration</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white pt-24 pb-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">SIMBig 2024</h1>
+            <p class="text-xl md:text-2xl mb-6">11th International Conference on Information Management and Big Data</p>
+            <p class="text-lg mb-8">November 20-22, 2024 • Ilo, Peru</p>
+            <a href="#registration" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                Register Now
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About SIMBig</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center">
+                SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, 
+                Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, 
+                Software Engineering, among others.
+            </p>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Keynote Speakers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Speaker Cards will be dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Location</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-xl font-bold mb-4">National University of Moquegua</h3>
+                <p class="text-gray-700 mb-4">
+                    Ciudad Jardin, Ilo Province, Peru
+                </p>
+                <p class="text-gray-700">
+                    The university, founded in 2007, offers diverse careers in Fisheries Engineering, 
+                    Systems and Computer Engineering, and Environmental Engineering at the Ilo campus, 
+                    as well as other programs at the Mariscal Nieto campus.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Registration</h2>
+            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4">Registration Fees</h3>
+                    <p class="text-lg mb-2">Single fee for all participants:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>USD 30.00 or PEN 120</li>
+                    </ul>
+                    <p class="text-gray-700">
+                        Includes access to all SIMBig sessions, coffee and lunch breaks.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Payment Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold mb-2">USD Payment</h4>
+                            <p>Account holder: Universidad Nacional de Moquegua</p>
+                            <p>Bank: Banco de la Nación</p>
+                            <p>Account number: 06-141-000126</p>
+                            <p>SWIFT: BANCPEPL</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">PEN Payment</h4>
+                            <p>Account holder: Universidad Nacional de Moquegua</p>
+                            <p>Bank: Banco de la Nación</p>
+                            <p>Account number: 00141-028154</p>
+                            <p>SWIFT: BANCPEPL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 SIMBig Conference. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Speakers data
+        const speakers = [
+            {
+                name: "Ricardo Baeza-Yates",
+                firstName: "ricardo",
+                affiliation: "Universitat Pompeu Fabra, Spain",
+                description: "Director of Research at the Institute for Experiential AI of Northeastern University"
+            },
+            {
+                name: "Aaron Courville",
+                firstName: "aaron",
+                affiliation: "Université de Montréal, Canada",
+                description: "Professor in Computer Science and Operations Research, founding member of Mila"
+            },
+            {
+                name: "Mona Diab",
+                firstName: "mona",
+                affiliation: "Carnegie Mellon University, USA",
+                description: "Professor and director of CMU's Language Technologies Institute"
+            },
+            {
+                name: "Anna Korhonen",
+                firstName: "anna",
+                affiliation: "University of Cambridge, UK",
+                description: "Professor of Artificial Intelligence, Director of CHIA"
+            },
+            {
+                name: "Huan Liu",
+                firstName: "huan",
+                affiliation: "Arizona State University, USA",
+                description: "Regents Professor and Ira A. Fulton Professor of Computer Science"
+            },
+            {
+                name: "Aline Villavicencio",
+                firstName: "aline",
+                affiliation: "University of Exeter, UK",
+                description: "Director of the Institute of Data Science and Artificial Intelligence"
+            }
+        ];
+
+        // Populate speakers
+        const speakersContainer = document.querySelector('#speakers .grid');
+        speakers.forEach(speaker => {
+            const speakerCard = document.createElement('div');
+            speakerCard.className = 'bg-white rounded-lg shadow-lg p-6 speaker-card';
+            speakerCard.innerHTML = `
+                <img 
+                    src="${speaker.firstName}.jpg" 
+                    alt="${speaker.name}"
+                    class="speaker-image mb-4"
+                    onerror="this.src='/api/placeholder/200/200'"
+                >
+                <h3 class="text-xl font-bold text-center mb-2">${speaker.name}</h3>
+                <p class="text-gray-600 text-center mb-2">${speaker.affiliation}</p>
+                <p class="text-gray-700 text-center">${speaker.description}</p>
+            `;
+            speakersContainer.appendChild(speakerCard);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop - 64,
+                    behavior: 'smooth'
+                });
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
